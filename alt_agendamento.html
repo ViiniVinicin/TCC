@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Page Info -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alteração de Agendamento</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/fonts/style.css" />
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="styleagendamento.css" />
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header">
+    <nav class="container">
+      <a class="logo" href="home_administrador.html">mecânica<span>baiano</span>.</a>
+
+      <!-- MENU -->
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="home_administrador.html">Início</a></li>
+        </ul>
+      </div>
+
+      <!-- /menu -->
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+  </header>
+
+  <main>
+    <fieldset class="field">
+     
+      <h1>Alteração de Data e Hora do Agendamento</h1>
+
+      <form action="alt_agendamento.php" method="POST">
+
+    
+
+        <label class="label-text" for="nome"><strong>Nome do Cliente:</strong></label>
+        <input class="label" type="text" name="nome">
+
+        <label class="label-text" for="servico"><strong>Tipo do Serviço</strong></label>
+        <select class="label-select-service" name="servico" id="servico" required>
+          
+          <option value="">Escolha</option>
+          <option value="Tira Risco">Tira Risco</option>
+          <option value="Revitalizacao de Pintura">Revitalização de Pintura</option>
+          <option value="Polimento Cristalizado">Polimento Cristalizado</option>
+          <option value="Micro Pintura">Micro Pintura</option>
+          <option value="Polimento Farol">Polimento de Farois</option>
+          <option value="Pintura Geral">Pintura Geral</option>
+          
+        </select>
+        
+        <label class="label-text" for="horario_a"><strong>Horário Antigo:</strong></label>
+        <input class="label" type="text" name="horario_a">
+
+        <label class="label-text" for="dia_a"><strong>Data Antiga:</strong></label>
+        <input class="label" type="date" name="dia_a">
+  
+        <label class="label-text" for="horario_n"><strong>Novo Horário:</strong></label>
+        <input class="label" type="text" name="horario_n">
+
+        <label class="label-text" for="dia_n"><strong>Nova Data:</strong></label>
+        <input class="label" type="date" name="dia_n">
+
+        <input type="submit" class="button" value="Alterar"/>
+
+      </form>
+    </fieldset>
+  </main>
+
+  <footer class="section">
+    <div class="container grid">
+      <div class="brand">
+        <a class="logo logo-alt" href="#home">mecânica<span>baiano</span>.</a>
+        <p>©2022 mecânicaeverton.</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+
+      <div class="social grid">
+        <a href="https://www.instagram.com/viinivinicin/" target="_blank">
+          <i class="icon-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/watch?v=0XIqH9DfpIc" target="_blank"><i class="icon-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<!-- main.js -->
+<script src="main.js"></script>
+
+</html>
